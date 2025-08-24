@@ -97,5 +97,127 @@ int main(){
     }
 }
 
+//**********Check the given number is Armstrong number or not.. */
 
 
+int main(){
+    int num1, temp;
+    int sum = 0;
+    printf("Enter the Number : ");
+    scanf("%d", &num1);
+    temp = num1;
+
+    while(num1!=0){
+        int digit = num1 % 10;
+        sum = sum + (digit * digit * digit);
+        num1 = num1 / 10;
+    }
+
+    if(temp==sum){
+        printf("The number is Armstrong");
+    }
+    else{
+        printf("The number is not Armstrong");
+    }
+}
+
+//***********Check the given number is Perfect number or not. */
+
+
+int main(){
+    int num1, temp;
+    int sum = 0;
+    printf("Enter the Number : ");
+    scanf("%d", &num1);
+    temp = num1;
+
+    int i = 1;
+
+    while(i<num1){
+    if(num1%i==0){
+        sum = sum + i;
+    }
+    i++;
+}
+    printf("%d\n", sum);
+
+    if(sum==temp){
+        printf("the Number is Perfect");
+    }
+    else{
+        printf("the number is not Perfect");
+    }
+}
+
+//*****************Find factorial of given number. */
+
+int main(){
+    int num1;
+    printf("Enter the Number :");
+    scanf("%d", &num1);
+    int fact = 1;
+
+    while (num1 != 0)
+    {
+        fact = fact * num1;
+        num1--;
+    }
+
+    printf(" the factoreal number is %d", fact);
+}
+
+//*********Check the given number is Strong number or not. */
+
+int main()
+{
+    int num1;
+    printf("Enter the Number :");
+    scanf("%d", &num1);
+
+    int temp = num1;
+    int fact = 1;
+    int sum = 0;
+    while (num1 != 0)
+    {
+        int digit = num1 % 10;
+        while (digit != 0)
+        {
+            fact = fact * digit;
+            digit--;
+        }
+        printf(" the fact of %d\n", fact);
+        sum = sum + fact;
+        fact = 1;
+        num1 = num1 / 10;
+    }
+
+    printf("%d\n", sum);
+
+    if (temp == sum)
+    {
+        printf("the Number is Strong");
+    }
+    else
+    {
+        printf("the Number is not a Strong");
+    }
+ }
+
+//************Find Sum of first and last digit of given number. */
+
+int main(){
+
+int num1;
+int temp;
+int sum = 0;
+printf("Enter the Number : ");
+scanf("%d", &num1);
+
+int last = num1 % 10;
+while(num1>=10){
+    num1 = num1 / 10;
+}
+int first = num1;
+
+printf("Sum of first and last digit = %d\n", first + last);
+}
