@@ -183,12 +183,110 @@ int main(){
 
     //************pattern 14Q extra Q */
 
-    int digit = 0;
-    for (int i = 1; i <= 4;i++){
-        for (int j = 1; j <= i;j++){
-            char ch = 'A' + digit;
-            printf("%c", ch);
-            digit=digit+1;
+    // int digit = 0;
+    // for (int i = 1; i <= 4;i++){
+    //     for (int j = 1; j <= i;j++){
+    //         char ch = 'A' + digit;
+    //         printf("%c", ch);
+    //         digit=digit+1;
+    //     }
+    //     printf("\n");
+    // }
+
+    //***** Q21 Print the following pattern:/
+
+    // for (int i = 1; i <= 5;i++){
+    //     int digit;
+    //     if(i%2==0){
+    //         digit=0;
+    //     }
+    //     else{
+    //         digit=1;
+    //     }
+    //     for (int j = 1; j <= i;j++){
+    //         printf("%d", digit);
+    //         digit=1-digit;
+    //     }
+    //     printf("\n");
+    // }
+
+    //*********Extra Q 24. Print the below pattern:  */
+
+    // int count = 1;
+    // int digit = 0;
+
+    // for (int i = 1; i <= 4;i++){
+    //     for (int j = 1; j <= 4;j++){
+           
+    //         char ch = 'A' + digit;
+    //         if(i%2==0){
+    //             printf("%c", ch);
+    //             digit++;
+    //         }
+    //         else{
+    //             printf("%d", count);
+    //             count++;
+    //         }
+    //     }
+    //     printf("\n");
+    // }
+
+    //*********Extra Q 25. Print the below pattern:  */
+
+    // for (int i = 1; i < 5;i++){
+    //     for (int j = i; j >0;j--){
+    //         printf("%d", j);
+    //     }
+    //     for (int j = 2; j <= i; j++){
+    //         printf("%d", j);
+    //     }
+    //     printf("\n");
+    // }
+
+    //**************Q 23. Print a diamond number pattern:  */
+
+    // for (int i = 1; i <= 4;i++){
+    //     for (int j = 1;j<=4-i;j++){
+    //         printf(" ");
+    //     }
+    //     for (int j = i; j > 0; j--)
+    //     {
+    //         printf("%d", j);
+    //     }
+    //     for (int j = 2; j <= i; j++){
+    //         printf("%d", j);
+    //     }
+    //         printf("\n");
+    //     }
+
+
+
+// Extra Q 15. Print the below pattern:  */
+
+
+    for (int i = 1; i <= 5; i++)
+    {
+        for (int j = 0; j < 5 - i; j++)
+        {
+            printf(" ");
+        }
+        for (int j = 0; j < i; j++)
+        {
+            printf("* ");
+        }
+        printf("\n");
+    }
+
+
+    for (int i = 1; i < 5; i++)
+    {
+        for (int j = 0; j < i; j++)
+        {
+            printf(" ");
+        }
+        for (int j = 0; j < 5 - i; j++)
+        {
+            printf("* ");
         }
         printf("\n");
     }
