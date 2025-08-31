@@ -115,6 +115,8 @@ int main(){
     //     printf("%d\n", term);
     // }
 
+
+
     //********* Write a C program to generate the series:
     // 1, 11, 111, 1111, ... n terms * /
 
@@ -130,8 +132,66 @@ int main(){
     // }
 
 
+    //************pattern 11Q extra Q */
 
-    
+   
+
+    //     int count = 1;
+    // for (int i = 1; i <= 5;i++){
+    //     for (int j = 1; j <= i;j++){
+    //         printf("%d", count);
+    //         count++;
+    //     }
+    //     printf("\n");
+
+
+
+    // }
+
+    //************pattern 12Q extra Q */
+
+    // for (int i = 1; i <= 3;i++){
+    //     int digit;
+
+    //     if (i % 2 == 0)
+    //     {
+    //         digit = 0;
+    //     }
+    //     else
+    //     {
+    //         digit = 1;
+    //     }
+
+    //     for (int j = 1; j <= 5;j++){
+    //         printf("%d", digit);
+    //         digit = 1-digit ;
+    //     }
+
+    //     printf("\n");
+    // }
+
+    //************pattern 13Q extra Q */
+
+    // for (int i = 1; i <= 5;i++){
+    //     int count = 1;
+    //     for (int j = 1; j <= i;j++){
+    //         printf("%d", count);
+    //         count++;
+    //     }
+    //     printf("\n");
+    // }
+
+    //************pattern 14Q extra Q */
+
+    int digit = 0;
+    for (int i = 1; i <= 4;i++){
+        for (int j = 1; j <= i;j++){
+            char ch = 'A' + digit;
+            printf("%c", ch);
+            digit=digit+1;
+        }
+        printf("\n");
+    }
 }
 
 
