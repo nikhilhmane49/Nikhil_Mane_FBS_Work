@@ -1,3 +1,5 @@
+//^^^^^^^^^^^^Function type II -->function without arguments and with return type^^^^^^^^^^^^^
+
 #include <stdio.h>
 
 //**********Write a program to check whether a number is even or odd. */
