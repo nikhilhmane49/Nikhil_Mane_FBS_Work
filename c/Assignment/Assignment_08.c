@@ -238,3 +238,68 @@ int main()
         }
     }
 }
+
+//**********Remove the duplicate elements in brr */
+int main()
+{
+    int arr[5];
+    int brr[5];
+
+    printf("Enter 10 values in the array:\n");
+    for (int i = 0; i < 5; i++)
+    {
+        scanf("%d", &arr[i]);
+    }
+
+    printf("Enter 10 values in the array:\n");
+    for (int i = 0; i < 5; i++)
+    {
+        scanf("%d", &brr[i]);
+    }
+    printf("The unique elements in second array are:\n");
+    for (int i = 0; i < 5; i++)
+    {
+        bool flag = 0;
+        for (int j = 0; j < 5; j++)
+        {
+            if (brr[i] == arr[j])
+            {
+                flag = 1;
+            }
+        }
+        if (flag == 0)
+        {
+            printf("%d ", brr[i]);
+        }
+    }
+}
+
+
+//************Remove the duplicate elements in arr */
+int main()
+{
+    int arr[10];
+    printf("Enter 10 values in the array:\n");
+    for (int i = 0; i < 10; i++)
+    {
+        scanf("%d", &arr[i]);
+    }
+
+    for (int i = 0; i < 10; i++)
+    {
+        int isduplicate = 0;
+        for (int j = i + 1; j < 10; j++)
+        {
+            if (arr[i] == arr[j])
+            {
+                isduplicate = 1;
+                break;
+            }
+        }
+
+        if (isduplicate == 0)
+        {
+            printf("%d ", arr[i]);
+        }
+    }
+}
