@@ -210,44 +210,88 @@
 
 //**********Write a program to search the element in the array using pointer  */
 
-void StoreArray(int *ptr, int size);
+// void StoreArray(int *ptr, int size);
 
-void SearchElement(int *ptr, int size, int num);
+// void SearchElement(int *ptr, int size, int num);
 
-int main(){
-    int arr[5];
-
-
-    printf("Enter 5 values in the first array:\n");
-    StoreArray(arr, 5);
-
-    int num;
-    printf("Enter the number to search: ");
-    scanf("%d", &num);
-
-    SearchElement(arr, 5, num);
-}
+// int main(){
+//     int arr[5];
 
 
-void StoreArray(int *ptr, int size){
-    for (int i = 0; i < size;i++){
-        scanf("%d", &ptr[i]);
-    }
-}
+//     printf("Enter 5 values in the first array:\n");
+//     StoreArray(arr, 5);
 
-void SearchElement(int *ptr, int size, int num)
-{
-    bool found = false;
+//     int num;
+//     printf("Enter the number to search: ");
+//     scanf("%d", &num);
 
-    for (int i = 0; i < size;i++){
-        if(num==ptr[i]){
-            found = true;
-            break;
-        }
-    }
+//     SearchElement(arr, 5, num);
+// }
 
-    if (found)
-        printf("Number %d found in the array.\n", num);
-    else
-        printf("Number %d not found in the array.\n", num);
-}
+
+// void StoreArray(int *ptr, int size){
+//     for (int i = 0; i < size;i++){
+//         scanf("%d", &ptr[i]);
+//     }
+// }
+
+// void SearchElement(int *ptr, int size, int num)
+// {
+//     bool found = false;
+
+//     for (int i = 0; i < size;i++){
+//         if(num==ptr[i]){
+//             found = true;
+//             break;
+//         }
+//     }
+
+//     if (found)
+//         printf("Number %d found in the array.\n", num);
+//     else
+//         printf("Number %d not found in the array.\n", num);
+// }
+
+
+// //********Replace the old value with new value*/
+
+// void storearray(int *ptr, int size);
+// void Displayarray(int *ptr, int size);
+
+// void replace(int *ptr,int size, int old, int new);
+
+// int main(){
+//     int arr[7];
+//     printf("Enter 7 values in the array:\n");
+//     storearray(arr, 7);
+//     printf("The elements in array are:\n"); 
+//     Displayarray(arr, 7);
+//     int old, new;
+//     printf("\nEnter the old and new value to replace: ");
+//     scanf("%d %d", &old, &new);
+//     replace(arr, 7, old, new);
+//     printf("The elements in array after replacing are:\n");
+//     Displayarray(arr, 7);
+
+// }
+
+// void storearray(int *ptr, int size){
+//     for (int i = 0; i < size;i++){
+//         scanf("%d", &ptr[i]);
+//     }
+// }
+
+// void Displayarray(int *ptr, int size){
+//     for (int i = 0; i < size;i++){
+//         printf("%d ", ptr[i]);
+//     }
+// }
+
+
+// void replace(int *ptr,int size, int old, int new){
+//     for (int i = 0; i < size;i++){
+//         if(ptr[i]==old){
+//             ptr[i] = new;
+//         }
+//     }
+// }
