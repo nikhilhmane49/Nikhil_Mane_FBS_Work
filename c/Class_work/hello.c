@@ -295,3 +295,73 @@
 //         }
 //     }
 // }
+
+
+
+// //*******Removing the element form the array */
+
+// void  StoreArray(int *ptr, int size);
+// int SearchElement(int *ptr, int size, int num);
+// void DisplayArray(int *ptr, int size);
+
+// void Removeelement(int *ptr, int size, int index);
+
+// int main(){
+//     int arr[5];
+//     printf("Enter 5 values in the array:\n");
+//     int size = 5;
+//     StoreArray(arr, 5);
+
+//     int num;
+//     printf("Enter the number to search: ");
+//     scanf("%d", &num);
+//     int result = SearchElement(arr, 5, num);
+
+//     Removeelement(arr, 5, result);
+//     printf("The elements in array after removing are:\n");
+
+//     size--;
+//     DisplayArray(arr, size);
+
+// }
+
+
+// void StoreArray(int *ptr, int size)
+// {
+//     for (int i = 0; i < size; i++)
+//     {
+//         scanf("%d", &ptr[i]);
+//     }
+// }
+
+// int SearchElement(int *ptr, int size, int num)
+// {
+//     int found = 0;
+
+//     for (int i = 0; i < size; i++)
+//     {
+//         if (num == ptr[i])
+//         {
+//             found = 1;
+//             return i;
+//         }
+//     }
+
+//     if (found==0){
+//         return -1;
+//     }
+       
+// }
+
+
+// void Removeelement(int *ptr, int size, int index){
+//     for (int i = index; i < size - 1;i++){
+//         ptr[i] = ptr[i + 1];
+//     }
+// }
+
+//  void DisplayArray(int *ptr, int size){
+//     for (int i = 0; i < size;i++){
+//         printf("%d ", ptr[i]);
+//     }
+//  }
