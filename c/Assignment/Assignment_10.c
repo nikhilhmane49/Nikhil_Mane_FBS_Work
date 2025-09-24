@@ -4,10 +4,7 @@
 #include <stdio.h>
 #include <string.h>
 
-
-
-//###################bluid in function */
-
+// ###################String built in function
 
 //********length function */
 
@@ -208,4 +205,25 @@ int main(){
     else{
         printf("The substring not found");
     }
+}
+
+//***********strpbrk()
+
+int main()
+{
+    char str[] = "Hello World Nikhil";
+
+    // strpbrk() finds the FIRST occurrence of any character from the given set
+    char *res = strpbrk(str, "NWrf");
+
+    if (res != NULL)
+    {
+        printf("First match found: %c at position: %ld\n", *res, res - str);
+    }
+    else
+    {
+        printf("No match found\n");
+    }
+
+    return 0;
 }
