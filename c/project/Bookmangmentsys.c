@@ -12,8 +12,11 @@ struct Book
 };
 
 void addbook();
+
 void displaybooks();
+
 void updatebook();
+
 void deletebook();
 
 void sortBooksById();
