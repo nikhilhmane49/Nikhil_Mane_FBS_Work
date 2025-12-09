@@ -1,0 +1,49 @@
+package p1;
+
+
+
+public class A{
+
+
+	private void myfunA(){
+
+
+		System.out.println("This myfunA is in the class A");
+
+	}
+
+
+}
+
+
+class B {
+
+
+void myfunB(){
+
+	A ref;   //---->Error because myfunA is private so it is acess only in class A
+	ref=new A();
+	ref.myfunA();
+
+	}
+
+
+}
+
+
+class C{
+
+
+void myfunC(){
+
+	A ref;    //---->Error because myfunA is private so it is acess only in class A
+	ref=new A();
+	ref.myfunA();
+
+	}
+
+
+
+
+
+}
